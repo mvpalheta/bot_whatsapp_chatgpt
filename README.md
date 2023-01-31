@@ -1,4 +1,4 @@
-# bot de whatsapp para consultas ao Chatgpt
+# Bot de whatsapp para consultas ao Chatgpt
 
 # Overview
 
