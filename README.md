@@ -2,15 +2,15 @@
 
 # Overview
 
-Este repositório tem como finalidade compartilhar os códigos utilizados na construção de um chatbot de whatsapp onde é possível realizar consultas ao ChatGPT da OpenAI através da API denominada GPT-3. Essa API permite aos desenvolvedores usarem o poder do modelo GPT-3 para criar aplicativos e soluções de inteligência artificial que podem ser usadas para uma ampla gama de aplicações, incluindo chatbots, geradores de conteúdo, soluções de tradução automática e muito mais. A aplicação tem como objetivo testar a integração do Python com a API GPT-3 da OpenAI.
+Este repositório tem como finalidade compartilhar os códigos utilizados na construção de um chatbot de whatsapp onde é possível realizar consultas ao ChatGPT da OpenAI através da API denominada GPT-3. A API GPT-3 é uma das mais avançadas APIs de modelos de linguagem disponíveis no mercado. Treinada com milhões de exemplos de textos  ela é capaz de produzir texto natural e convincente em uma ampla gama de tarefas, incluindo geração de texto, tradução, respostas a perguntas, e muito mais. Além disso, a API é fácil de usar e oferece suporte a várias linguagens de programação, incluindo Python, Java, e JavaScript.
 
+Assim, a aplicação apresentada neste repositório tem como objetivo testar a integração do Python com a API GPT-3 da OpenAI.
 
-
-Basicamente, é um bot de whatsapp onde se pode enviar um termo (em português ou inglês) relacionado à área de ciência de dados, "one hot encode" por exemplo, e ele retorna o conceito/definição desse termo. Caso o termo não exista na base de dados, que está em constante construção, existe a possibilidade enviar sugestões de termos para adição futura. O conceito da aplicação é simples, mas acredito que pode ajudar principalmente quem está iniciando na área.
+Basicamente, é um bot de whatsapp a partir do qual se pode interagir com o ChatGPT através de sua API. O conceito da aplicação é simples, mas acredito que pode ajudar principalmente quem está iniciando na área.
 
 A aplicação ainda está na versão beta e para acessá-la basta adicionar [este número](https://wa.me/+14155238886) ao whatsapp, enviar o código **"join passage-grew"** e depois mandar um "olá", "alô", "alow", "boa tarde", etc.
 
-Todo o projeto foi desenvolvido em Python, sendo que o formulário de sugestão de termos utiliza a biblioteca Streamilit. Para acessar a documentação, diversos exemplos, tutoriais e a comunidade da biblioteca basta clicar aqui. Ainda, atualmente o chatbot roda no Heroku e o formulário está rodando em uma instância EC2 da AWS sendo que as bases de dados estão disponíveis em um bucket S3 também da AWS. Também estou utilizando o serviço da Twilio para realizar a entrega das mensagens.
+**Todo o projeto foi desenvolvido em Python, sendo que o formulário de sugestão de termos utiliza a biblioteca Streamilit. Para acessar a documentação, diversos exemplos, tutoriais e a comunidade da biblioteca basta clicar aqui. Ainda, atualmente o chatbot roda no Heroku e o formulário está rodando em uma instância EC2 da AWS sendo que as bases de dados estão disponíveis em um bucket S3 também da AWS. Também estou utilizando o serviço da Twilio para realizar a entrega das mensagens.**
 
 # Organização do repositório
 
