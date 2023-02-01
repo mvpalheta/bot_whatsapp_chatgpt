@@ -2,7 +2,9 @@
 
 # Overview
 
-Este repositório tem como finalidade compartilhar os códigos utilizados na construção de um chatbot de whatsapp onde é possível consultar a definição de diversos termos relacionados à ciência de dados. A aplicação tem como inspiração este bot do [Me Bote na Conversa](https://www.hypeness.com.br/2021/11/me-bote-na-conversa-chatbot-inclusivo-traduz-termos-corporativos-em-ingles-no-whatsapp/), entretanto é voltada especificamente para a área de ciência de dados.
+Este repositório tem como finalidade compartilhar os códigos utilizados na construção de um chatbot de whatsapp onde é possível realizar consultas ao ChatGPT da OpenAI através da API denominada GPT-3. Essa API permite aos desenvolvedores usarem o poder do modelo GPT-3 para criar aplicativos e soluções de inteligência artificial que podem ser usadas para uma ampla gama de aplicações, incluindo chatbots, geradores de conteúdo, soluções de tradução automática e muito mais. A aplicação tem como objetivo testar a integração do Python com a API GPT-3 da OpenAI.
+
+
 
 Basicamente, é um bot de whatsapp onde se pode enviar um termo (em português ou inglês) relacionado à área de ciência de dados, "one hot encode" por exemplo, e ele retorna o conceito/definição desse termo. Caso o termo não exista na base de dados, que está em constante construção, existe a possibilidade enviar sugestões de termos para adição futura. O conceito da aplicação é simples, mas acredito que pode ajudar principalmente quem está iniciando na área.
 
