@@ -35,8 +35,8 @@ Para começar, basta enviar o que deseja consultar e eu trarei a resposta para v
         msg.body(response)
     # Caso o usuário envie algo para consulta, o mesmo será enviada para a API do ChatGPT a fim de receber a resposta
     else:
-        # Execute a chamada à API
-        responseai = openai.Completion.create(
+        # Execute a segunda chamada à API usando a engine
+        response1 = openai.Completion.create(
             engine="text-davinci-002",
             prompt=consulta,
             max_tokens=1024,
@@ -44,7 +44,19 @@ Para começar, basta enviar o que deseja consultar e eu trarei a resposta para v
             stop=None,
             temperature=0.2,
         )
-        response = responseai["choices"][0]["text"]
+
+        # Execute a segunda chamada à API usando a engine "text-curie-001"
+        response2 = openai.Completion.create(
+            engine="text-curie-001",
+            prompt=consulta,
+            max_tokens=1024,
+            n=1,
+            stop=None,
+            temperature=0.2,
+        )     
+        #response = responseai["choices"][0]["text"]
+        # Combine as respostas das duas engines
+        response = response1["choices"][0]["text"] + " " + response2["choices"][0]["text"]
         msg.body(response)
     # Retornando a resposta para o serviço de mensagem (Twilio, neste caso)
     return Response(str(resp), mimetype="application/xml")
