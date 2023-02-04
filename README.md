@@ -10,7 +10,7 @@ Basicamente, é um bot de whatsapp a partir do qual se pode interagir com o Chat
 
 A aplicação ainda está na versão beta e para acessá-la basta adicionar [este número](https://wa.me/+14155238886) ao whatsapp, enviar o código **"join passage-grew"** e depois mandar um "olá", "alô", "alow", "boa tarde", etc.
 
-**Todo o projeto foi desenvolvido em Python, sendo que o formulário de sugestão de termos utiliza a biblioteca Streamilit. Para acessar a documentação, diversos exemplos, tutoriais e a comunidade da biblioteca basta clicar aqui. Ainda, atualmente o chatbot roda no Heroku e o formulário está rodando em uma instância EC2 da AWS sendo que as bases de dados estão disponíveis em um bucket S3 também da AWS. Também estou utilizando o serviço da Twilio para realizar a entrega das mensagens.**
+Todo o projeto foi desenvolvido em Python e  atualmente o chatbot roda no Heroku. Também estou utilizando o serviço da Twilio para realizar a entrega das mensagens.
 
 # Organização do repositório
 
