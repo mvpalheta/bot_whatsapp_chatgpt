@@ -20,7 +20,7 @@ Todo o projeto foi desenvolvido em Python e  atualmente o chatbot roda no Heroku
 
 # Fluxo do chatbot
 
-<p align="center"><img alt="fluxo_chatbot" width="90%" src="https://github.com/mvpalheta/bot_whatsapp_chatgpt/blob/main/fluxo1_chatbot.png"></p>
+<p align="center"><img alt="fluxo_chatbot" width="90%" src="https://github.com/mvpalheta/bot_whatsapp_chatgpt/blob/main/fluxo1_chatbot_chatgpt.png"></p>
 
 <br>
 
