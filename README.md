@@ -12,9 +12,9 @@ A aplicação ainda está na versão beta e para acessá-la basta adicionar [est
 
 Todo o projeto foi desenvolvido em Python e  atualmente o chatbot roda no Heroku. Também estou utilizando o serviço da Twilio para realizar a entrega das mensagens.
 
-# Organização do repositório
+[Este artigo](https://programdiary.com/post/create-a-whatsapp-bot) apresenta um exemplo de como criar e testar o chatbot utilizando o serviço da Twilio.
 
-Para uma melhor organização, o repositório está dividido em 2 pastas descritas abaixo:
+# Organização do repositório
 
 **whatsbot_chatgpt:** Esta pasta contém o código do bot bem como outros recursos necessário para realizar o deploy da aplicação do Heroku.
 
