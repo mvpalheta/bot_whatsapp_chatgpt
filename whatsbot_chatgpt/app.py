@@ -1,11 +1,11 @@
 from flask import Flask, request, Response
-import requests
+#import requests
 from twilio.twiml.messaging_response import MessagingResponse
-import io
+#import io
 import openai
 
 # Configure sua chave de API
-openai.api_key = "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"
+openai.api_key = "SUA_CHAVE_AQUI" #Você pode criar um chave em https://openai.com/api/
 
 
 app = Flask(__name__)
@@ -19,7 +19,7 @@ def bot():
 
     resp = MessagingResponse()
     msg = resp.message()
-    # Definindo a msg de boas vinda que será apresentada caso o usuário envie um "alô"
+    # Definindo a msg de boas vindas que será apresentada caso o usuário envie um "alô"
     if incoming_msg in ['alo', 'ola', 'olá' 'alow', 'oi', 'oii', 'ei', 'eii', 'bom dia', 'boa tarde', 'boa noite', 'hello', 'hi', 'hey', 'start', 'hii']:
         response = """
             *Olá!! Seja bem vindo(a) ao Bot de consulta ao ChatGPT*
@@ -34,8 +34,9 @@ Para começar, basta enviar o que deseja consultar e eu trarei a resposta para v
 
         msg.body(response)
     # Caso o usuário envie algo para consulta, o mesmo será enviada para a API do ChatGPT a fim de receber a resposta
+    # Neste caso, serão utilizadas duas engines diferentes e seus resultados combinados a fim de se obter uma melhor resposta
     else:
-        # Execute a segunda chamada à API usando a engine
+        # Execute a primeira chamada à API usando a engine "text-davinci-002"
         response1 = openai.Completion.create(
             engine="text-davinci-002",
             prompt=consulta,
@@ -54,7 +55,6 @@ Para começar, basta enviar o que deseja consultar e eu trarei a resposta para v
             stop=None,
             temperature=0.2,
         )     
-        #response = responseai["choices"][0]["text"]
         # Combine as respostas das duas engines
         response = response1["choices"][0]["text"] + " " + response2["choices"][0]["text"]
         msg.body(response)
