@@ -1,4 +1,4 @@
-Flask==1.1.1
+Flask==2.1.0
 openai==0.26.4
 requests==2.25.1
 twilio==6.33.1
