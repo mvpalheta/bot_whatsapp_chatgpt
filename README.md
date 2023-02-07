@@ -12,11 +12,11 @@ A aplicação ainda está na versão beta e para acessá-la basta adicionar [est
 
 Todo o projeto foi desenvolvido em Python e  atualmente o chatbot roda na plataforma [Deta](https://www.deta.sh/). Também estou utilizando o serviço da Twilio para realizar a entrega das mensagens.
 
-[Este artigo](https://programdiary.com/post/create-a-whatsapp-bot) apresenta um exemplo de como criar e testar o chatbot utilizando o serviço da Twilio.
+[Este artigo](https://programdiary.com/post/create-a-whatsapp-bot) apresenta um exemplo de como criar e testar o chatbot utilizando o serviço da Twilio. [Este](https://www.gormanalysis.com/blog/building-and-deploying-rock-paper-scissors-with-python-fastapi-and-deta/) e [este](https://nolowiz.com/deta-free-heroku-alternative-step-by-step-guide-to-deploy-a-python-app/) artigos mostram como fazer o deploy do bot na plataforma Deta.
 
 # Organização do repositório
 
-**whatsbot_chatgpt:** Esta pasta contém o código do bot bem como outros recursos necessário para realizar o deploy da aplicação no Deta.
+**whatsbot_chatgpt:** Esta pasta contém o código do bot bem como outros recursos necessário para realizar o deploy da aplicação na Deta.
 
 # Fluxo do chatbot
 
