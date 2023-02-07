@@ -10,13 +10,13 @@ Basicamente, é um bot de whatsapp a partir do qual se pode interagir com o Chat
 
 A aplicação ainda está na versão beta e para acessá-la basta adicionar [este número](https://wa.me/+14155238886) ao whatsapp, enviar o código **"join passage-grew"** e depois mandar um "olá", "alô", "alow", "boa tarde", etc.
 
-Todo o projeto foi desenvolvido em Python e  atualmente o chatbot roda no Heroku. Também estou utilizando o serviço da Twilio para realizar a entrega das mensagens.
+Todo o projeto foi desenvolvido em Python e  atualmente o chatbot roda na plataforma [Deta](https://www.deta.sh/). Também estou utilizando o serviço da Twilio para realizar a entrega das mensagens.
 
 [Este artigo](https://programdiary.com/post/create-a-whatsapp-bot) apresenta um exemplo de como criar e testar o chatbot utilizando o serviço da Twilio.
 
 # Organização do repositório
 
-**whatsbot_chatgpt:** Esta pasta contém o código do bot bem como outros recursos necessário para realizar o deploy da aplicação do Heroku.
+**whatsbot_chatgpt:** Esta pasta contém o código do bot bem como outros recursos necessário para realizar o deploy da aplicação no Deta.
 
 # Fluxo do chatbot
 
